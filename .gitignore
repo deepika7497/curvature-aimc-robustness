@@ -1,0 +1,72 @@
+# The repo tracks only what is needed for the DATE 2026 LBR paper
+# (aihwkit_experiments + shared utils/ and models/). Everything else stays local.
+
+# ---------------------------------------------------------------------------
+# Python / editor
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.vscode/
+.idea/
+.cursorignore
+
+# ---------------------------------------------------------------------------
+# Large artifacts (anywhere in the tree)
+# ---------------------------------------------------------------------------
+*.pth
+*.pt
+*.pkl
+*.npy
+*.npz
+*.tar.gz
+*.zip
+
+# ---------------------------------------------------------------------------
+# Top-level directories not used by the LBR paper
+# ---------------------------------------------------------------------------
+# datasets (downloaded locally, see README)
+/data/
+# earlier CSL / QAT work
+/experiments/
+# third-party repos (each is its own git repo)
+/libraries/
+# old curvature / memorization scores
+/scores/
+/test/
+# archive of the previous layout
+/zz_old_organization/
+
+# ---------------------------------------------------------------------------
+# Top-level files not used by the LBR paper
+# ---------------------------------------------------------------------------
+/argparse
+/log
+/commands.sh
+/debug_tinyimagenet.py
+# runner for experiments/ (cim_quant env)
+/multirunner.sh
+# cluster host lists; see hosts.example.txt
+/hosts*.txt
+!/hosts.example.txt
+/avail_hosts.txt
+
+# ---------------------------------------------------------------------------
+# aihwkit_experiments: outputs
+# ---------------------------------------------------------------------------
+/aihwkit_experiments/results/
+/aihwkit_experiments/scores/
+/aihwkit_experiments/logs/
+
+# ---------------------------------------------------------------------------
+# aihwkit_experiments: scripts/jobs not used by the paper
+# (v1 drift-sweep pipeline and hardware-aware training)
+# ---------------------------------------------------------------------------
+/aihwkit_experiments/scripts/analog_inference.py
+/aihwkit_experiments/scripts/analyze_curvature_failures.py
+/aihwkit_experiments/scripts/plot_csl_curvature.py
+/aihwkit_experiments/scripts/hwa_training.py
+/aihwkit_experiments/jobs/analog_inference_jobs.sh
+/aihwkit_experiments/jobs/analyze_curvature_failures_jobs.sh
+/aihwkit_experiments/jobs/plot_csl_curvature_jobs.sh
+/aihwkit_experiments/jobs/hwa_training_jobs.sh

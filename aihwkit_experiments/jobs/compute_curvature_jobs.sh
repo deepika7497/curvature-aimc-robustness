@@ -1,0 +1,9 @@
+python aihwkit_experiments/scripts/compute_curvature.py --dataset cifar10 --model resnet18
+python aihwkit_experiments/scripts/compute_curvature.py --dataset cifar100 --model resnet18
+python aihwkit_experiments/scripts/compute_curvature.py --dataset cifar10 --model resnet50
+python aihwkit_experiments/scripts/compute_curvature.py --dataset cifar100 --model resnet50
+python aihwkit_experiments/scripts/compute_curvature.py --dataset tinyimagenet --model resnet18
+python aihwkit_experiments/scripts/compute_curvature.py --dataset tinyimagenet --model resnet34
+python aihwkit_experiments/scripts/compute_curvature.py --dataset tinyimagenet --model resnet50
+python aihwkit_experiments/scripts/compute_curvature.py --dataset imagenet --model resnet18
+python aihwkit_experiments/scripts/compute_curvature.py --dataset imagenet --model resnet34

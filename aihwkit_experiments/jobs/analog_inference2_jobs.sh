@@ -1,0 +1,10 @@
+python aihwkit_experiments/scripts/analog_inference2.py --dataset cifar10 --seed 42 --model resnet18 --batch_size 128 > aihwkit_experiments/logs/analog_inference2_cifar10_resnet18.log
+python aihwkit_experiments/scripts/analog_inference2.py --dataset cifar10 --seed 42 --model resnet50 --batch_size 128 > aihwkit_experiments/logs/analog_inference2_cifar10_resnet50.log
+python aihwkit_experiments/scripts/analog_inference2.py --dataset cifar100 --seed 42 --model resnet18 --batch_size 128 > aihwkit_experiments/logs/analog_inference2_cifar100_resnet18.log
+python aihwkit_experiments/scripts/analog_inference2.py --dataset cifar100 --seed 42 --model resnet50 --batch_size 128 > aihwkit_experiments/logs/analog_inference2_cifar100_resnet50.log
+python aihwkit_experiments/scripts/analog_inference2.py --dataset tinyimagenet --seed 42 --model resnet18 --batch_size 128 > aihwkit_experiments/logs/analog_inference2_tinyimagenet_resnet18.log
+python aihwkit_experiments/scripts/analog_inference2.py --dataset tinyimagenet --seed 42 --model resnet34 --batch_size 128 > aihwkit_experiments/logs/analog_inference2_tinyimagenet_resnet34.log
+python aihwkit_experiments/scripts/analog_inference2.py --dataset tinyimagenet --seed 42 --model resnet50 --batch_size 128 > aihwkit_experiments/logs/analog_inference2_tinyimagenet_resnet50.log
+python aihwkit_experiments/scripts/analog_inference2.py --dataset imagenet --seed 42 --model resnet18 --batch_size 128 > aihwkit_experiments/logs/analog_inference2_imagenet_resnet18.log
+python aihwkit_experiments/scripts/analog_inference2.py --dataset imagenet --seed 42 --model resnet34 --batch_size 128 > aihwkit_experiments/logs/analog_inference2_imagenet_resnet34.log
+python aihwkit_experiments/scripts/analog_inference2.py --dataset imagenet --seed 42 --model resnet50 --batch_size 128 > aihwkit_experiments/logs/analog_inference2_imagenet_resnet50.log
